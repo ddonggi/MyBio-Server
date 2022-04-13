@@ -1,12 +1,12 @@
-package com.o2o.service.hi5_back.controller;
+package com.dglee.service.mybio.server.controller;
 /*
  * Created by 이동기 on 2022-03-21
  */
 
-import com.o2o.service.hi5_back.DTO.UserDTO;
-import com.o2o.service.hi5_back.model.User;
-import com.o2o.service.hi5_back.repository.UserRepository;
-import com.o2o.service.hi5_back.util.ObjectConverter;
+import com.dglee.service.mybio.server.DTO.UserDTO;
+import com.dglee.service.mybio.server.repository.UserRepository;
+import com.dglee.service.mybio.server.util.ObjectConverter;
+import com.dglee.service.mybio.server.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

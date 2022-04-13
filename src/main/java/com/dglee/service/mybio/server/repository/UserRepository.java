@@ -1,10 +1,9 @@
-package com.o2o.service.hi5_back.repository;
+package com.dglee.service.mybio.server.repository;
 /*
  * Created by 이동기 on 2022-03-21
  */
 
-import com.o2o.service.hi5_back.DTO.UserDTO;
-import com.o2o.service.hi5_back.model.User;
+import com.dglee.service.mybio.server.model.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

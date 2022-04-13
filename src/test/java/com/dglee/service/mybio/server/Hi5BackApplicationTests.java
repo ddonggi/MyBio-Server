@@ -1,4 +1,4 @@
-package com.o2o.service.hi5_back;
+package com.dglee.service.mybio.server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

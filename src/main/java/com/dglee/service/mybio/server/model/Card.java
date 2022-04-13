@@ -1,10 +1,9 @@
-package com.o2o.service.hi5_back.model;
+package com.dglee.service.mybio.server.model;
 /*
  * Created by 이동기 on 2022-03-21
  */
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

@@ -1,4 +1,4 @@
-package com.o2o.service.hi5_back.controller;
+package com.dglee.service.mybio.server.controller;
 /*
  * Created by 이동기 on 2022-03-21
  */

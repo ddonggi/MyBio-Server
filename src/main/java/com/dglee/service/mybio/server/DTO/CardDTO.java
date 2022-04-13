@@ -1,4 +1,4 @@
-package com.o2o.service.hi5_back.DTO;
+package com.dglee.service.mybio.server.DTO;
 
 import lombok.*;
 

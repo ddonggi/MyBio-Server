@@ -1,13 +1,12 @@
-package com.o2o.service.hi5_back.util;
+package com.dglee.service.mybio.server.util;
 /*
  * Created by 이동기 on 2022-03-23
  */
 
-import com.o2o.service.hi5_back.DTO.CardDTO;
-import com.o2o.service.hi5_back.DTO.UserDTO;
-import com.o2o.service.hi5_back.controller.UserController;
-import com.o2o.service.hi5_back.model.Card;
-import com.o2o.service.hi5_back.model.User;
+import com.dglee.service.mybio.server.DTO.CardDTO;
+import com.dglee.service.mybio.server.DTO.UserDTO;
+import com.dglee.service.mybio.server.model.Card;
+import com.dglee.service.mybio.server.model.User;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
