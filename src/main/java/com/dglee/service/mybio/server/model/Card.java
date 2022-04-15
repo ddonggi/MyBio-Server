@@ -7,7 +7,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 
 //해당 클래스는 DB Table 과 매핑되는 코어한 클래스이기 때문에, 불변성 보장을 위해 @Setter 는 쓰지 않는다.
@@ -15,7 +18,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "created_card", schema = "public")
+@Table(name = "cards", schema = "public")
 public class Card implements Serializable {
 
     @Id
