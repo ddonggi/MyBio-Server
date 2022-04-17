@@ -4,9 +4,15 @@ package com.dglee.service.mybio.server.repository;
  */
 
 
-/*@Repository
+import com.o2o.service.hi5_back.model.Template;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
 public interface TemplateRepository extends JpaRepository<Template,String> {
     Template save(Template template);
-    Optional<Template> findByUserId(String userId);
+    Template findByUserId(String userId);
     List<Template> findAllByUserId(String userId);
-}*/
+}
