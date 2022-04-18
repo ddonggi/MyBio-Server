@@ -3,6 +3,7 @@ package com.dglee.service.mybio.server.repository;
  * Created by 이동기 on 2022-03-21
  */
 
+import com.dglee.service.mybio.server.model.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

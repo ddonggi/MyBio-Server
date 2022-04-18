@@ -4,8 +4,12 @@ package com.dglee.service.mybio.server.util;
  */
 
 import com.dglee.service.mybio.server.DTO.CardDTO;
+import com.dglee.service.mybio.server.DTO.MiniCardDTO;
+import com.dglee.service.mybio.server.DTO.TemplateDTO;
 import com.dglee.service.mybio.server.DTO.UserDTO;
 import com.dglee.service.mybio.server.model.Card;
+import com.dglee.service.mybio.server.model.MiniCard;
+import com.dglee.service.mybio.server.model.Template;
 import com.dglee.service.mybio.server.model.User;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
@@ -49,6 +53,7 @@ public class ObjectConverter {
         List<CardDTO> cardDTOList = new ArrayList<>();
         for (Card card : cardList) {
             CardDTO cardDTO = CardDTO.builder()
+                    .cardId(card.getPk())
                     .showOrder(card.getShowOrder())
                     .type(card.getType())
                     .style(card.getStyle())
@@ -59,5 +64,25 @@ public class ObjectConverter {
         }
         logger.info("CardDTOList:{}", cardDTOList.toString());
         return cardDTOList;
+    }
+
+    public MiniCardDTO convertMiniCardToMiniCardDTO(MiniCard miniCard) {
+        return MiniCardDTO.builder()
+                .koreanName(miniCard.getKoreanName())
+                .englishName(miniCard.getEnglishName())
+                .profileImage(miniCard.getProfileImage())
+                .greetings(miniCard.getGreetings())
+                .introduction(miniCard.getIntroduction())
+                .links(miniCard.getLinks())
+                .build();
+    }
+
+    public TemplateDTO convertTemplateToTemplateDTO(Template template) {
+        TemplateDTO templateDTO = TemplateDTO.builder()
+                .design(template.getDesign())
+                .viewMode(template.getViewMode())
+                .build();
+        logger.info("templateDTO:{}", templateDTO.toString());
+        return templateDTO;
     }
 }

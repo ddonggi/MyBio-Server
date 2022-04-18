@@ -3,10 +3,10 @@ package com.dglee.service.mybio.server.controller;
  * Created by 이동기 on 2022-03-21
  */
 
-import com.o2o.service.hi5_back.DTO.TemplateDTO;
-import com.o2o.service.hi5_back.model.Template;
-import com.o2o.service.hi5_back.repository.TemplateRepository;
-import com.o2o.service.hi5_back.util.ObjectConverter;
+import com.dglee.service.mybio.server.DTO.TemplateDTO;
+import com.dglee.service.mybio.server.model.Template;
+import com.dglee.service.mybio.server.repository.TemplateRepository;
+import com.dglee.service.mybio.server.util.ObjectConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

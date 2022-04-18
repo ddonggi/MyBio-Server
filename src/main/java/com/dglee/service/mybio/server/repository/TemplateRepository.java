@@ -4,7 +4,7 @@ package com.dglee.service.mybio.server.repository;
  */
 
 
-import com.o2o.service.hi5_back.model.Template;
+import com.dglee.service.mybio.server.model.Template;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
