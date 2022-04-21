@@ -4,7 +4,9 @@ package com.dglee.service.mybio.server.controller;
  */
 
 import com.dglee.service.mybio.server.DTO.CardDTO;
+import com.dglee.service.mybio.server.DTO.MiniCardDTO;
 import com.dglee.service.mybio.server.model.Card;
+import com.dglee.service.mybio.server.model.MiniCard;
 import com.dglee.service.mybio.server.repository.CardRepository;
 import com.dglee.service.mybio.server.repository.MiniCardRepository;
 import com.dglee.service.mybio.server.util.ObjectConverter;
@@ -41,7 +43,7 @@ public class CardController implements Serializable {
         return cardDTOList;
     }
 
-/*    @GetMapping(value = "/mini-card/{cardId}")
+    @GetMapping(value = "/mini-card/{cardId}")
     public MiniCardDTO getMiniCard(@PathVariable String cardId){
         logger.info("request mini card >>");
         logger.info("cardId:{}",cardId);
@@ -50,6 +52,6 @@ public class CardController implements Serializable {
         // 전송용 데이터
         MiniCardDTO miniCardDTO= objectConverter.convertMiniCardToMiniCardDTO(MiniCard);
         return miniCardDTO;
-    }*/
+    }
 
 }
